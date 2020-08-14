@@ -1,0 +1,21 @@
+.canvas {
+  display: block;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  width: 100%;
+}
+
+.sliderContainer {
+  display: grid;
+}
+
+.sliderLeft {
+  grid-column: 1/1;
+}
+
+.sliderCenter {
+  grid-column: 2/2;
+}
+
+.sliderRight {
+  grid-column: 3/3;
+}

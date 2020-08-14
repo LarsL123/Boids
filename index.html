@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Biods Demo</title>
+        <meta name="description" content="An app displying a bunch of birds doing their own thing">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <canvas class="canvas" id="canvas"></canvas>  
+
+        <div class="sliderContainer">
+            <div class="sliderLeft">
+                <label for="avoidance">Avoidance</label> 
+                <input type="range" id="avoidance"> 
+            </div>
+
+            <div class="sliderCenter" >
+                <label for="centerUrge">Centering Urge</label> 
+                <input type="range" id="centerUrge">
+            </div>
+
+            <div class="sliderRight">
+                <label for="matrchVelocity">Match Velocity</label> 
+                <input type="range" id="matchVelocity">  
+            </div>         
+        </div>  
+             
+        <script src="./vector2.js"></script>
+        <script src="./boid.js"> </script>
+        <script src="./index.js"></script>
+        <script src="./input.js"> </script>
+    </body>
+</html>
