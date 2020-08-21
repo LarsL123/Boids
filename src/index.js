@@ -10,10 +10,14 @@ let avoidance = 0.5;
 let matchingUrge = 0.5;
 
 let boids = [];
+const numOfBoids = 200;
 
 function initBoids() {
-  for (i = 1; i < 15; i++) {
-    const boid = new Boid(50 * i, 50 * i, i % 2, 1);
+  for (i = 1; i < numOfBoids; i++) {
+    const randW = Math.floor(Math.random() * width);
+    const randH = Math.floor(Math.random() * height);
+
+    const boid = new Boid(randW, randH, i % 2, 1);
     boids.push(boid);
   }
 }
