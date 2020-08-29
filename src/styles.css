@@ -1,21 +1,72 @@
+body {
+  margin: 0;
+}
+
 .canvas {
   display: block;
-  grid-template: auto 1fr auto / auto 1fr auto;
   width: 100%;
 }
 
 .sliderContainer {
   display: grid;
 }
+.sliderContainer div {
+  text-align: center;
+}
+
+.sliderContainer label {
+  text-align: center;
+  display: block;
+}
 
 .sliderLeft {
-  grid-column: 1/1;
+  grid-column: 1/2;
 }
 
 .sliderCenter {
-  grid-column: 2/2;
+  grid-column: 2/3;
 }
 
 .sliderRight {
-  grid-column: 3/3;
+  grid-column: 3/4;
 }
+
+/* Arrow & Hover Animation */
+
+/* .content {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+#more-arrows:hover polygon {
+  fill: #000;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+  -webkit-transform: translateY(-18px);
+  transform: translateY(-18px);
+}
+#more-arrows:hover polygon.arrow-top {
+  -webkit-transform: translateY(18px);
+  transform: translateY(18px);
+}
+
+polygon {
+  fill: #000;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+polygon.arrow-top {
+  opacity: 0.5;
+} */

@@ -25,7 +25,7 @@ function initBoids() {
 function sizeCanvas() {
   const canvas = document.getElementById("canvas");
   width = window.innerWidth;
-  height = window.innerHeight;
+  height = window.innerHeight + 20; 
   canvas.width = width;
   canvas.height = height;
 }
